@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-At TechLabs Berlin, we use the Semester Radar to present the semester to the students as a comprehensive timeline of events and milestones. It is always referred to as the main source for event details.</p>
+At TechLabs Hamburg, we use the Semester Radar to present the semester to the students as a comprehensive timeline of events and milestones. It is always referred to as the main source for event details.</p>
 
 ---
 
