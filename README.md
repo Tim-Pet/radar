@@ -9,7 +9,7 @@ At TechLabs Hamburg, we use the Semester Radar to present the semester to the st
 
 # Overview
 
-The Radar is a [NuxtJS](https://nuxtjs.org/) application, rendered as a static site. All it's content is based on simple text files (`.yaml` format) located within this repository, which is converted into simple HTML files during the build process. The application is built by [GitHub Actions](https://docs.github.com/en/actions) and hosted on [GitHub Pages](https://pages.github.com/).
+The Radar is a [NuxtJS](https://nuxtjs.org/) application, rendered as a static site. All it's content is based on simple text files (`.yaml` format) located within this repository, which is converted into simple HTML files during the build process. The application is built & hosted by [vercel](https://vercel.com/docs).
 
 ## Structure
 
@@ -18,14 +18,141 @@ The main items in the Radar are: the **Timeline**, the **Events**, and the **Mil
 <p align="center"><img src="https://user-images.githubusercontent.com/5139870/117249238-8ad11e80-ae41-11eb-9712-14767b29e3f2.png" width="800"/></p>
 
 - **Timeline**: shows the whole semester at a glance; divided in weeks, gives an overview of events and milestones each week
-- **Events**: weekly events happening throuhgout the semester; each event can have resources attached to it (meeting room link, slides, event recordings, etc)
+- **Events**: weekly events happening throughout the semester; each event can have resources attached to it (meeting room link, slides, event recordings, etc)
 - **Milestones**: are deadlines for the students throughout the semester; they can include to-dos that the student has to complete by a certain date
 
 All Events and Milestones have their own pages, accessible by either clicking on their titles or on their names within the Timeline. This allows for sending out links to specific events and milestones to the students, when necessary.
 
 Additionally, there are also other secondary pages displayed when clicking on the hamburger menu on top right: **FAQ**, **Media**, and **Newsletter**.
 
-# How to use it
+# How to use it (Content Team)
+
+This section is meant to give an overview over the whole process of adding new content.
+
+<br />
+
+## Typical workflow
+
+### Prerequisites:
+
+- TL radar Repository is accessible for you (you are added as an editor by @Tim Petersen)
+- You forked the project locally
+
+### The typical workflow is to:
+
+- Sync local with remote repository `git fetch --prune`
+  - `git fetch` pulls all data from the remote repo
+  - `--prune` deletes all local branches that doesn't exit within the remote repo (like a garbage collector)
+  - If you want to keep all your local branches use only `git fetch`
+- Create a local branch
+  - Source should always be the _development_ branch
+  - Use the `content/<branch-name>` prefix e.g.: `content/initial-setup-ST23`
+- Make your changes
+  - If you are working within a content branch make changes _only_ to the `.yaml` files within the `content-hh` directory
+  - Adjust the `.yaml` file (or create a new one) to your needs
+  - Use `git add -A` to stage all changes
+  - Use `git commit -m "<your commit message>"` to commit all changes. make sure to use present and describe what you changed. -> e.g.: `git commit -m "add ST23 events"`
+- Push your local changes
+  - Use `git push -u origin content/<branch-name>` (This will track your local branch within the remote repo)
+- Merge your changes to `deploy`
+  - Wether we want a staging environment & handle merging with rebasing and/or PRs is tbd
+
+## Content changes
+
+#### Events
+
+- title: string
+- date: date (yyyy-mm-ddThh:mm:ss+hh:mm)
+- description: string (multiline)
+- meetings (array, separated by a "-")
+  - title: string
+  - description: string
+  - type: meeting | form | slides | video | link | tool | game | nothing
+  - url: string
+- forms (array, separated by a "-")
+  - title: string
+  - description: string
+  - url: string
+- resources (array, separated by a "-")
+
+  - title: string
+  - description: string
+  - type: meeting | form | slides | video | link | tool | game | nothing
+  - url: string
+
+#### Milestones
+
+- title: string
+- deadline: date (yyyy-mm-ddThh:mm:ss+hh:mm)
+- type: checkpoint | cutoff (styling differs only between 'cutoff' & other)
+- description: string (multiline)
+- todos (array, separated by a "-")
+
+  - name: string
+
+    - resources (array, separated by a "-")
+
+      - title: string
+      - type: meeting | form | slides | video | link | tool | game | nothing
+      - url: string
+
+#### announcement
+
+- body: string (multiline)
+- publish: boolean
+
+#### FAQ
+
+- sections
+  - title: string
+    - questions
+      - title: string
+      - content: string (multiline)
+
+#### Media
+
+-- honestly no clue what this does --
+
+- items
+  - title: Info Session
+    - youtubeURL: string
+    - date: date (yyyy-mm-dd)
+    - description: string (multiline)
+
+#### Timeline
+
+always start the week on a Monday and end it on a Sunday
+
+- startsAt: int
+- timeline:
+  - title: string
+    description: string (multiline)
+    startDate: date (yyyy/mm/dd)
+    endDate: date (yyyy/mm/dd)
+
+#### Nav Links
+
+- navLinks:
+  - title: string
+  - path: relative path (e.g.`/faq`)
+  - is_public: boolean
+
+#### Newsletter
+
+- signUpUrl: string
+
+#### Social Links
+
+- socialLinks:
+  - type: facebook | instagram | linkedin | slack
+    url: string
+    is_public: boolean
+
+#### Term
+
+- term: string
+
+# How to use it (Dev) - WIP
 
 While the Radar is a very simple application, is does require some initial configuration and some knowledge of Git and JavaScript. If you'd like to use the radar, start by cloning this repo locally and configuring it to your location.
 
