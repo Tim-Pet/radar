@@ -1,0 +1,34 @@
+---
+title: Welcome Event ST21
+date: '2022-10-11T19:00:00+01:00'
+description: |
+  This is where your Digital Shaper Journey will start. We'll give you a summary on all you need to know to master your track.
+  Our topics include:
+
+  1. **Key Facts** regarding TechLabs, the Digital Shaper program, certificate and community
+  2. **Administrative Topics** – your onboarding to our toolset, communication channels, regular meetings & next steps
+  3. **Track Get-Together** – you'll meet other participants in the track you're planning to choose, and can ask the Track Leads for more information
+  Our goal is for everybody to have a clear understanding about TechLabs Hamburg. We will share the link to join here a few days before the event.
+
+meetings:
+  - title: Zoom Link
+    description: The main room where we will meet.
+    type: meeting
+    url: https://www.zoom.us/xxx
+forms:
+  []
+  # - title: Feedback
+  #   description: Please leave feedback for our Kick-Off Event!
+  #   type: form
+  #   url: https://techlabsorg.typeform.com/xxxx
+
+resources:
+  []
+  - title: 'Slides'
+    description: The presentation we showed you during the Kick-Off
+    type: slides
+    url: https://docs.google.com/presentation/d/e/2PACX-1vTHjTj5f6Kg6oD1iUSYrW8-T60ShHCOKBEXOr4e-9ADaaUsnmI7XSOZFlsy5vnFVUDU4lsbdu0gDVOu/pub?start=false&loop=false&delayms=3000
+  - title: 'ST21 Google Calendar'
+    description: Link to our shared calendar with all events and milestones
+    type: link
+    url: https://calendar.google.com/calendar/u/1?cid=Y18ydHRmNWxycW11b25qdDVrNXFqZzBmaG5iZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
