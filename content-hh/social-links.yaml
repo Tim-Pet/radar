@@ -4,10 +4,10 @@ socialLinks:
     url: https://www.facebook.com/techlabsberlin
     is_public: true
   - type: instagram
-    url: https://www.instagram.com/techlabs.berlin/
+    url: https://www.instagram.com/techlabs.hh/
     is_public: true
   - type: linkedin
-    url: https://www.linkedin.com/company/techlabs-berlin
+    url: https://www.linkedin.com/company/techlabs-hamburg
     is_public: true
   - type: slack
     url: https://techlabs-community.slack.com/

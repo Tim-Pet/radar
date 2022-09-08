@@ -1,0 +1,30 @@
+---
+title: Kick off
+date: 2022-10-12T19:30:00+02:00
+description: |
+  This is where your Digital Shaper Journey will start. We'll give you a summary on all you need to know to master your track.
+  Our topics include:
+
+  1. **Key Facts** regarding TechLabs, the Digital Shaper program, certificate and community
+  2. **Administrative Topics** – your onboarding to our toolset, communication channels, regular meetings & next steps
+  3. **Track Get-Together** – you'll meet other participants in the track you're planning to choose, and can ask the Track Leads for more information
+  Our goal is for everybody to have a clear understanding about TechLabs Hamburg. We will share the link to join here a few days before the event.
+meetings:
+  - title: Zoom Link
+    description: The main room where we will meet.
+    type: meeting
+    url: https://www.techlabs.org
+forms:
+  []
+  # - title: Registration
+  #   description: Registration for the workshops for the workshop weekend
+  #   url: https://techlabsorg.typeform.com/to/rB1UA0yh#Registration Form
+  # - title: Login
+  #   description: Login for the workshops for the workshop weekend
+  #   url: https://techlabsorg.typeform.com/to/rB1UA0yh#Registration Form
+resources:
+  []
+  # - title: Schedule
+  #   description: The schedule with all workshops
+  #   type: link
+  #   url: https://www.notion.so/techlabs/cd6dc42841634c5393b14585671be523?v=03b78d40f5c64913afe7bfdfd5c45477
