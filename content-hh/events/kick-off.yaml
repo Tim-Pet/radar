@@ -1,6 +1,6 @@
 ---
-title: Welcome Event ST21
-date: '2022-10-11T19:00:00+01:00'
+title: Welcome Event WT22/23
+date: '2022-10-12T19:00:00+01:00'
 description: |
   This is where your Digital Shaper Journey will start. We'll give you a summary on all you need to know to master your track.
   Our topics include:
@@ -28,7 +28,12 @@ resources:
     description: The presentation we showed you during the Kick-Off
     type: slides
     url: https://docs.google.com/presentation/d/e/2PACX-1vTHjTj5f6Kg6oD1iUSYrW8-T60ShHCOKBEXOr4e-9ADaaUsnmI7XSOZFlsy5vnFVUDU4lsbdu0gDVOu/pub?start=false&loop=false&delayms=3000
-  - title: 'ST21 Google Calendar'
+  - title: 'WT22/23 Google Calendar'
     description: Link to our shared calendar with all events and milestones
     type: link
     url: https://calendar.google.com/calendar/u/1?cid=Y18ydHRmNWxycW11b25qdDVrNXFqZzBmaG5iZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+  - title: 'Digital Sharper Guide'
+    description: Link to the Digital Sharper Guide with all your informations!
+    type: link
+    url: https://www.notion.so/techlabs/Digital-Shaper-Program-Guide-ebf4700aa4744666920faa90256ff4c7
+#old digital sharper guide check if update is done
