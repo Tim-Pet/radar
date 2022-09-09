@@ -1,0 +1,20 @@
+---
+title: Github Deadline
+deadline: 2022-11-10T22:59:59+01:00
+type: cutoff
+description: |
+  Untill this date you have the opportunity to upload your test file to the techlabs github. Otherwise you will need to learn that during the project phase.
+todos:
+  []
+  # - name: Requirements to fullfill
+  #   resources:
+  #     []
+  #     - title: Requirements
+  #       type: link
+  #       url: https://www.notion.so/techlabs/Requirements-for-Techies-Summary-adebfd1a49e64e5e882e67edbf915505
+  # - name: Submit your project
+  #   resources:
+  #      []
+  #     - title: Project Submission Form
+  #       type: typeform
+  #       url: https://techlabsorg.typeform.com/to/JxHy4WNc
