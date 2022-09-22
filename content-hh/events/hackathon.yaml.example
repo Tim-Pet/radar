@@ -2,9 +2,7 @@
 title: Hackathon
 date: 2023-01-10T19:30:00+02:00
 description: |
-  This is a 
-
-  multiline description
+  This is the Hackathon. On this weekend you have 2 days time to develop data science solutions to the hackathon topic.
 meetings:
   - title: Zoom Link
     description: The main room where we will meet.

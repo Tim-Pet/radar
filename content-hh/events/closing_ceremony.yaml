@@ -3,19 +3,16 @@ title: Closing Ceremony
 date: 2023-03-03T19:30:00+02:00
 description: |
   This is a the closing ceremony. Here we will celebrate your journey of the last six months. Your group needs to present their journey on the main stage!
-  
+
 meetings:
-  - title: Zoom Link
-    description: The main room where we will meet.
-    type: meeting
-    url: https://www.techlabs.org
+  # - title: Zoom Link
+  #   description: The main room where we will meet.
+  #   type: meeting
+  #   url: https://www.techlabs.org
 forms:
   []
   # - title: Registration
   #   description: Registration for the workshops for the workshop weekend
-  #   url: https://techlabsorg.typeform.com/to/rB1UA0yh#Registration Form
-  # - title: Login
-  #   description: Login for the workshops for the workshop weekend
   #   url: https://techlabsorg.typeform.com/to/rB1UA0yh#Registration Form
 resources:
   []
