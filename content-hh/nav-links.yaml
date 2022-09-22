@@ -1,11 +1,14 @@
 ---
-  navLinks:
-    - title: Timeline
-      path: /
-      is_public: true
-    - title: FAQ
-      path: /faq
-      is_public: true
-    - title: Newsletter
-      path: /newsletter
-      is_public: true
+navLinks:
+  - title: Timeline
+    path: /
+    is_public: true
+  - title: FAQ
+    path: /faq
+    is_public: true
+  - title: Newsletter
+    path: /newsletter
+    is_public: true
+  - title: DSGuide
+    path: https://www.notion.so/techlabs/Digital-Shaper-Program-Guide-0dc0a8dc3878486b836a93fb7435f67b
+    is_public: true

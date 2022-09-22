@@ -11,9 +11,20 @@
             class="space-y-2 text-sm font-semibold text-right uppercase lg:flex lg:items-center lg:space-x-4 lg:space-y-0"
           >
             <li v-for="link in navLinks" :key="link.title" @click="toggle">
-              <NuxtLink class="hover:text-pink-600 nav-link" :to="link.path">{{
-                link.title
-              }}</NuxtLink>
+              <NuxtLink
+                v-if="!isExternal"
+                class="hover:text-pink-600 nav-link"
+                :to="link.path"
+                >{{ link.title }}</NuxtLink
+              >
+              <a
+                v-else
+                class="hover:text-pink-600 nav-link"
+                :href="link.path"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ link.title }}</a
+              >
             </li>
           </ul>
         </nav>
@@ -52,6 +63,7 @@ export default defineComponent({
     const isPublic = ref(process.env.SCOPE === 'public')
     const isOpen = ref(false)
     const toggle = () => (isOpen.value = !isOpen.value)
+    const isExternal = (link) => link.path.startsWith('http')
 
     const { $content } = useContext()
     const navLinks = ref([])
@@ -63,7 +75,7 @@ export default defineComponent({
         : content.navLinks
     })
 
-    return { isOpen, toggle, navLinks }
+    return { isOpen, toggle, navLinks, isExternal }
   },
 })
 </script>
