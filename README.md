@@ -47,7 +47,7 @@ This section is meant to give an overview over the whole process of adding new c
 - Create a local branch
   - Source should always be the _development_ branch
   - Use the `content/<branch-name>` prefix e.g.: `content/initial-setup-ST23`
-- Make your changes
+- Make your changes => Changes need to be made in events, milestones, term and timeline
   - If you are working within a content branch make changes _only_ to the `.yaml` files within the `content-hh` directory
   - Adjust the `.yaml` file (or create a new one) to your needs
   - Use `git add -A` to stage all changes

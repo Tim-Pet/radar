@@ -1,8 +1,8 @@
 ---
 socialLinks:
-  - type: facebook
-    url: https://www.facebook.com/techlabsberlin
-    is_public: true
+  # - type: facebook
+  #   url: https://www.facebook.com/techlabsberlin
+  #   is_public: true
   - type: instagram
     url: https://www.instagram.com/techlabs.hh/
     is_public: true
