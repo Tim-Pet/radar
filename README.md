@@ -137,6 +137,8 @@ always start the week on a Monday and end it on a Sunday
   - path: relative path (e.g.`/faq`)
   - is_public: boolean
 
+NOTE: There is now an external link check active. This check looks for `http` within the url and maps accordingly to a relative or external page. Use an url starting with http to make it link to the external page.
+
 #### Newsletter
 
 - signUpUrl: string
